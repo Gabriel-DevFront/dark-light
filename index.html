@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AutoPrime | Seu próximo carro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                AUTO<span>PRIME</span>
+            </a>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#carro">
+                        Destaque
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#veiculos">
+                        Veículos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- BOTÃO DARK/LIGHT -->
+
+            <button
+                id="temaBtn"
+                class="tema-btn"
+                aria-label="Alternar tema"
+            >
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-conteudo">
+
+                <div class="hero-texto">
+
+                    <span class="tag">
+                        🚘 CARRO EM DESTAQUE
+                    </span>
+
+                    <h1>
+                        Dirija o carro
+                        <span>dos seus sonhos.</span>
+                    </h1>
+
+                    <p>
+                        Encontre veículos selecionados,
+                        revisados e prontos para você.
+                        Qualidade, segurança e confiança
+                        em um só lugar.
+                    </p>
+
+                    <div class="hero-botoes">
+
+                        <a
+                            href="#carro"
+                            class="btn btn-principal"
+                        >
+                            Ver carro
+                        </a>
+
+                        <a
+                            href="#veiculos"
+                            class="btn btn-secundario"
+                        >
+                            Ver estoque
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD DO CARRO -->
+
+                <div class="carro-hero">
+
+                    <div class="carro-imagem">
+
+                        <div class="carro-placeholder">
+                            🚗
+                        </div>
+
+                    </div>
+
+                    <div class="carro-info">
+
+                        <span>
+                            2025 • Automático
+                        </span>
+
+                        <h2>
+                            Falcon GT
+                        </h2>
+
+                        <strong>
+                            R$ 129.990
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CARRO DESTAQUE
+        ========================== -->
+
+        <section class="destaque" id="carro">
+
+            <div class="imagem-destaque">
+
+                <div class="carro-grande">
+                    🚘
+                </div>
+
+            </div>
+
+
+            <div class="info-destaque">
+
+                <span class="tag">
+                    DESTAQUE DA SEMANA
+                </span>
+
+                <h2>
+                    Falcon GT
+                </h2>
+
+                <p>
+                    Um veículo desenvolvido para quem busca
+                    desempenho, conforto e tecnologia em
+                    cada quilômetro.
+                </p>
+
+
+                <!-- CARACTERÍSTICAS -->
+
+                <div class="especificacoes">
+
+                    <div>
+                        <span>Motor</span>
+                        <strong>2.0 Turbo</strong>
+                    </div>
+
+                    <div>
+                        <span>Potência</span>
+                        <strong>250 cv</strong>
+                    </div>
+
+                    <div>
+                        <span>Câmbio</span>
+                        <strong>Automático</strong>
+                    </div>
+
+                    <div>
+                        <span>Ano</span>
+                        <strong>2025</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="preco">
+
+                    <span>
+                        Por apenas
+                    </span>
+
+                    <strong>
+                        R$ 129.990
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="btn btn-principal"
+                    onclick="mostrarMensagem()"
+                >
+                    Tenho interesse
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ESTATÍSTICAS
+        ========================== -->
+
+        <section class="estatisticas">
+
+            <div>
+
+                <strong>
+                    10+
+                </strong>
+
+                <span>
+                    Anos de experiência
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    500+
+                </strong>
+
+                <span>
+                    Carros vendidos
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Veículos revisados
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    5★
+                </strong>
+
+                <span>
+                    Atendimento
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             VEÍCULOS
+        ========================== -->
+
+        <section
+            class="veiculos"
+            id="veiculos"
+        >
+
+            <div class="titulo-secao">
+
+                <span>
+                    NOSSO ESTOQUE
+                </span>
+
+                <h2>
+                    Encontre seu próximo carro
+                </h2>
+
+                <p>
+                    Confira alguns dos veículos disponíveis.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <!-- CARRO 1 -->
+
+                <article class="card-carro">
+
+                    <div class="card-imagem">
+                        🚙
+                    </div>
+
+                    <div class="card-conteudo">
+
+                        <span>
+                            2024 • Automático
+                        </span>
+
+                        <h3>
+                            Urban X
+                        </h3>
+
+                        <p>
+                            SUV • Flex • 45.000 km
+                        </p>
+
+                        <strong>
+                            R$ 99.990
+                        </strong>
+
+                        <button
+                            onclick="mostrarMensagem()"
+                        >
+                            Ver detalhes →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARRO 2 -->
+
+                <article class="card-carro">
+
+                    <div class="card-imagem">
+                        🚗
+                    </div>
+
+                    <div class="card-conteudo">
+
+                        <span>
+                            2025 • Automático
+                        </span>
+
+                        <h3>
+                            City Sport
+                        </h3>
+
+                        <p>
+                            Sedan • Flex • 20.000 km
+                        </p>
+
+                        <strong>
+                            R$ 89.990
+                        </strong>
+
+                        <button
+                            onclick="mostrarMensagem()"
+                        >
+                            Ver detalhes →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARRO 3 -->
+
+                <article class="card-carro">
+
+                    <div class="card-imagem">
+                        🚘
+                    </div>
+
+                    <div class="card-conteudo">
+
+                        <span>
+                            2024 • Automático
+                        </span>
+
+                        <h3>
+                            Black Edition
+                        </h3>
+
+                        <p>
+                            Sedan • Turbo • 30.000 km
+                        </p>
+
+                        <strong>
+                            R$ 119.990
+                        </strong>
+
+                        <button
+                            onclick="mostrarMensagem()"
+                        >
+                            Ver detalhes →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section
+            class="contato"
+            id="contato"
+        >
+
+            <div>
+
+                <span class="tag">
+                    FALE CONOSCO
+                </span>
+
+                <h2>
+                    Pronto para encontrar
+                    seu próximo carro?
+                </h2>
+
+                <p>
+                    Entre em contato com nossa equipe
+                    e descubra as condições disponíveis
+                    para o veículo que você procura.
+                </p>
+
+                <button
+                    class="btn btn-principal"
+                    onclick="mostrarMensagem()"
+                >
+                    Entrar em contato
+                </button>
+
+            </div>
+
+
+            <div class="contato-card">
+
+                <div>
+                    📱
+                    <span>
+                        WhatsApp
+                    </span>
+
+                    <strong>
+                        (85) 99999-9999
+                    </strong>
+                </div>
+
+                <div>
+                    📍
+                    <span>
+                        Endereço
+                    </span>
+
+                    <strong>
+                        Fortaleza - CE
+                    </strong>
+                </div>
+
+                <div>
+                    🕐
+                    <span>
+                        Atendimento
+                    </span>
+
+                    <strong>
+                        Seg - Sáb / 08h - 18h
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div>
+
+                <a
+                    href="#inicio"
+                    class="logo"
+                >
+                    AUTO<span>PRIME</span>
+                </a>
+
+                <p>
+                    Seu próximo carro está aqui.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#carro">
+                    Destaque
+                </a>
+
+                <a href="#veiculos">
+                    Veículos
+                </a>
+
+                <a href="#contato">
+                    Contato
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Atendimento
+                </h3>
+
+                <p>
+                    Segunda a sábado
+                </p>
+
+                <p>
+                    08h às 18h
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 AutoPrime —
+            Projeto acadêmico.
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
